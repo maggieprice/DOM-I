@@ -38,5 +38,42 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+// All images
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let headimg = document.getElementById("cta-img");
+headimg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let midimg = document.getElementById("middle-img");
+midimg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Navigation Bar
+let mainMenu = document.querySelectorAll("a");
+mainMenu[0].textContent=siteContent["nav"]["nav-item-1"];
+mainMenu[1].textContent=siteContent["nav"]["nav-item-2"];
+mainMenu[2].textContent=siteContent["nav"]["nav-item-3"];
+mainMenu[3].textContent=siteContent["nav"]["nav-item-4"];
+mainMenu[4].textContent=siteContent["nav"]["nav-item-5"];
+mainMenu[5].textContent=siteContent["nav"]["nav-item-6"];
+
+
+// mainMenu.forEach( element => {
+//   element.style.color = 'lightgray';
+// })
+// Middle h4's
+let midheads = document.querySelectorAll('h4');
+midheads[0].textContent=siteContent["main-content"]["features-h4"];
+midheads[1].textContent=siteContent["main-content"]["about-h4"];
+midheads[2].textContent=siteContent["main-content"]["services-h4"];
+midheads[3].textContent=siteContent["main-content"]["product-h4"];
+midheads[4].textContent=siteContent["main-content"]["vision-h4"];
+
+// Middle content 
+// let part1 = document.querySelector("cta");
+// part1[0].setAttribute('class', siteContent["cta"]["h1"]);
+// part1[2].textContent=siteContent["cta"]["button"];
+// part1[0].textContent=siteContent["cta"]["h1"];
+
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', siteContent["nav"]["img-src"]);
