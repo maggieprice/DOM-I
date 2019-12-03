@@ -38,6 +38,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+
 // All images
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
@@ -57,10 +59,13 @@ mainMenu[3].textContent=siteContent["nav"]["nav-item-4"];
 mainMenu[4].textContent=siteContent["nav"]["nav-item-5"];
 mainMenu[5].textContent=siteContent["nav"]["nav-item-6"];
 
+// Top Section
 
-// mainMenu.forEach( element => {
-//   element.style.color = 'lightgray';
-// })
+let topper = document.querySelectorAll("h1");
+topper[0].textContent=siteContent["cta"]["h1"];
+
+let butn = document.querySelectorAll("button")
+butn[0].textContent=siteContent["cta"]["button"];
 // Middle h4's
 let midheads = document.querySelectorAll('h4');
 midheads[0].textContent=siteContent["main-content"]["features-h4"];
@@ -70,10 +75,21 @@ midheads[3].textContent=siteContent["main-content"]["product-h4"];
 midheads[4].textContent=siteContent["main-content"]["vision-h4"];
 
 // Middle content 
-// let part1 = document.querySelector("cta");
-// part1[0].setAttribute('class', siteContent["cta"]["h1"]);
-// part1[2].textContent=siteContent["cta"]["button"];
-// part1[0].textContent=siteContent["cta"]["h1"];
+let paras = document.querySelectorAll("p");
+paras[0].textContent=siteContent["main-content"]["features-content"];
+paras[1].textContent=siteContent["main-content"]["about-content"];
+paras[2].textContent=siteContent["main-content"]["services-content"];
+paras[3].textContent=siteContent["main-content"]["product-content"];
+paras[4].textContent=siteContent["main-content"]["vision-content"];
 
-// let logo = document.getElementById("logo-img");
-// logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Bottom header 
+
+// Bottom Content
+let contacts1 = document.querySelectorAll(".contact h4");
+contacts1[0].textContent=siteContent["contact"]["contact-h4"];
+
+let infocon = document.querySelectorAll(".contact p")
+infocon[0].textContent=siteContent["contact"]["address"];
+infocon[1].textContent=siteContent["contact"]["phone"];
+infocon[2].textContent=siteContent["contact"]["email"];
