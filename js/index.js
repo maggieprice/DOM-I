@@ -93,3 +93,25 @@ let infocon = document.querySelectorAll(".contact p")
 infocon[0].textContent=siteContent["contact"]["address"];
 infocon[1].textContent=siteContent["contact"]["phone"];
 infocon[2].textContent=siteContent["contact"]["email"];
+
+
+// Task 3 part 1
+mainMenu.forEach( element => {
+  element.style.color = "green";
+})
+
+// Task 3 Part 2
+//  * [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. 
+
+let newMenuItem = document.createElement('a');
+newMenuItem.textContent = "Next"
+
+const parentElement = document.querySelector('nav');
+parentElement.append(newMenuItem)
+
+
+let contactItem = document.createElement('h4');
+contactItem.textContent = "Maggie's Website"
+
+const parentElement2 = document.querySelector('.contact');
+parentElement2.appendChild(contactItem)
